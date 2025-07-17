@@ -1,0 +1,123 @@
+/* css for the buttons */
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* panels css */
+.panels {
+  backdrop-filter: blur(5px);
+  border-left: 3px solid var(--text-color1);
+  padding: 0 20px 20px 20px;
+  margin: -10px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px; /* panel box size */
+  word-break: break-word;
+  overflow-wrap: break-word;
+
+  /* entrance animation */
+  -webkit-animation: fade-in-top 0.5s ease-in-out both;
+  animation: fade-in-top 0.5s ease-in-out both;
+}
+
+/* exit animation */
+.panels.exit {
+  -webkit-animation: fade-out-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    backwards;
+  animation: fade-out-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) backwards;
+}
+
+/* animations */
+@-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
+@keyframes fade-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
+
+/* panel contents css */
+h3 {
+  color: var(--text-color3);
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.otk {
+  font-style: italic;
+  text-decoration: underline;
+  color: var(--text-color5);
+}
+
+.pnli,
+.dmpn,
+.tier {
+  font-size: 1.2rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.prt {
+  font-size: 9px;
+  font-style: italic;
+  color: var(--text-color6);
+}
+
+@media (max-width: 770px) {
+  .buttons {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

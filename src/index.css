@@ -1,0 +1,41 @@
+:root {
+  /* font color var */
+  --text-color1: rgba(226, 100, 63, 1);
+  --text-color2: black;
+  --text-color3: rgb(244, 137, 104);
+  --text-color4: whitesmoke; /* Social icons hover color */
+  --text-color5: #f5c8bb;
+  --text-color6: #e98769; /* mid-bt span tag color */
+
+  /* box color var */
+  --box-color1: rgba(226, 101, 63, 0.519);
+
+  /* divider color */
+  --div-color: #67676769;
+}
+
+body {
+  background: url("./assets/skulls.svg") repeat,
+    linear-gradient(180deg, rgb(0, 0, 0) 35%, rgba(226, 100, 63, 1) 100%);
+  background-size: auto cover;
+  background-attachment: fixed;
+
+  /* default font family */
+  font-family: "ITC", Arial;
+
+  /* default main text color */
+  color: var(--text-color1);
+
+  ::selection {
+    background-color: var(--text-color1);
+    color: var(--text-color2);
+  }
+}
+
+/* site main font */
+@font-face {
+  font-family: "ITC";
+  src: url(./fonts/ITC-Avant-Garde-Gothic-Std-Medium.otf) format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
