@@ -1,13 +1,10 @@
+import Profile from "../assets/profile1.jpg";
 import "./top-title.css";
 
 export default function TopTitle() {
   return (
     <div className="top">
-      <img
-        src="./src/assets/profile1.jpg"
-        alt="watusiyaaa-website-profile"
-        className="img"
-      />
+      <img src={Profile} alt="watusiyaaa-website-profile" className="img" />
       <div className="info-container">
         <h1 className="title">WATUSIYAAA</h1>
         <h2 className="nick">
