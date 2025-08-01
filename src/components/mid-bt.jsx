@@ -32,7 +32,7 @@ export default function MidBt() {
         <Button text={"DM's/Pings"} onClick={() => toggle("dm")} />
         <Button text={"Stanlist"} onClick={() => toggle("stan")} />
         <a
-          href="https://docs.google.com/document/d/1YFiF8b5e61wFeGdCMEhHZaWRU2v-a0qE-iOzZ7d9vzo/edit?usp=sharing"
+          href="https://tinyurl.com/danibotcardlist"
           target="_blank"
           rel="noopener noreferrer"
         >
