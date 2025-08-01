@@ -1,6 +1,6 @@
 import "./button.css";
 
-export default function Button({ text, onClick = "" }) {
+export default function Button({ text, onClick = () => {} }) {
   return (
     <button className="info-button" onClick={onClick}>
       <span className="top-key"></span>

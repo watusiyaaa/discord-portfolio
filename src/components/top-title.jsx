@@ -1,4 +1,4 @@
-import Profile from "../assets/profile1.jpg";
+import Profile from "../assets/profile.jpg";
 import "./top-title.css";
 
 export default function TopTitle() {
@@ -10,7 +10,7 @@ export default function TopTitle() {
         <h2 className="nick">
           Hi! Call me <span className="s1">Jini</span>
         </h2>
-        <ul>
+        <ul className="list">
           <li className="info">She/Her</li>
           <li className="info">Philippines</li>
           <li className="info">04z</li>

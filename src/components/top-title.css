@@ -14,6 +14,7 @@
   margin: 0 20px 0 20px;
   border: 10px solid var(--text-color1);
   border-radius: 50%;
+  box-shadow: 1px 1px 40px var(--text-color1);
 }
 
 .info-container {
@@ -66,15 +67,22 @@ ul {
 
   .title {
     font-size: 2.5rem;
+    text-align: center;
   }
 
   .nick {
     font-size: 1.5rem;
     margin-top: -20px;
+    text-align: center;
+  }
+
+  .list {
+    margin-bottom: -20px;
   }
 
   .info {
     font-size: 1rem;
+    text-align: center;
   }
 }
 
@@ -89,14 +97,21 @@ ul {
 
   .title {
     font-size: 2rem;
+    text-align: center;
   }
 
   .nick {
     font-size: 1.2rem;
     margin-top: -20px;
+    text-align: center;
+  }
+
+  .list {
+    margin-bottom: -20px;
   }
 
   .info {
     font-size: 0.9rem;
+    text-align: center;
   }
 }
