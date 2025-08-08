@@ -1,0 +1,172 @@
+.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background: var(--box-color2);
+}
+
+.player1 {
+  margin: 20px 0 20px 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.np {
+  color: var(--text-color7);
+  font-size: 15px;
+  align-self: flex-start;
+  margin: -2px 0 5px -50px;
+}
+
+.m-title,
+.artist,
+.sp {
+  font-size: 35px;
+  display: inline-block;
+  margin: 0 10px 5px 0;
+}
+
+.btns {
+  font-size: 20px;
+  color: var(--text-color1);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.btns:hover {
+  color: var(--text-color3);
+  transition: all 0.3s ease-out;
+}
+
+.duration {
+  font-size: 15px;
+  margin: auto;
+}
+
+.progress-controls {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+}
+
+.progress-bar {
+  flex: 1;
+  min-width: 400px;
+  width: 100%;
+  height: 6px;
+  background: transparent;
+  appearance: none;
+  border-radius: 3px;
+  outline: none;
+  margin: auto;
+  cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+  height: 6px;
+  background: var(--text-color6);
+  border-radius: 3px;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: var(--text-color1);
+  margin-top: -5px;
+  cursor: pointer;
+  transition: background 0.2s;
+  border-radius: 50%;
+  border: 2px solid var(--text-color4);
+}
+
+.progress-bar:active::-webkit-slider-thumb {
+  background: var(--text-color3);
+}
+
+@media (max-width: 450px) {
+  .np {
+    font-size: 10px;
+    margin: -2px 0 5px -20px;
+  }
+
+  .m-title,
+  .artist,
+  .sp {
+    font-size: 15px;
+  }
+
+  .btns {
+    font-size: 15px;
+  }
+
+  .duration {
+    font-size: 13px;
+  }
+
+  .progress-bar {
+    min-width: 150px;
+    height: 6px;
+  }
+
+  .progress-controls {
+    gap: 8px;
+  }
+
+  .progress-bar::-webkit-slider-runnable-track {
+    height: 4px;
+  }
+
+  .progress-bar::-webkit-slider-thumb {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  .np {
+    font-size: 8px;
+    margin: -2px 0 5px -5px;
+  }
+
+  .m-title,
+  .artist,
+  .sp {
+    font-size: 13px;
+  }
+
+  .btns {
+    font-size: 12px;
+  }
+
+  .duration {
+    font-size: 10px;
+  }
+
+  .progress-controls {
+    gap: 5px;
+  }
+
+  .progress-bar {
+    min-width: 80px;
+    height: 6px;
+  }
+
+  .progress-bar::-webkit-slider-runnable-track {
+    height: 3px;
+  }
+
+  .progress-bar::-webkit-slider-thumb {
+    width: 12px;
+    height: 12px;
+  }
+}

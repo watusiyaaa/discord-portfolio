@@ -31,18 +31,12 @@ export default function MidBt() {
         <Button text={"Likes/Dislikes"} onClick={() => toggle("likes")} />
         <Button text={"DM's/Pings"} onClick={() => toggle("dm")} />
         <Button text={"Stanlist"} onClick={() => toggle("stan")} />
-        <a
-          href="https://tinyurl.com/danibotcardlist"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button text={"Card List [Dani Bot]"} />
-        </a>
+        <Button text={"Anything Dani Bot"} onClick={() => toggle("dani")} />
       </div>
 
       {/* panels section */}
       {(ifOpen === "likes" || ifExist === "likes") && (
-        // placeholder only
+        // likes/dislikes panel
         <div className={`panels${ifExist === "likes" ? " exit" : ""}`}>
           <h3>Like</h3>
           <ul>
@@ -98,7 +92,7 @@ export default function MidBt() {
       )}
 
       {(ifOpen === "dm" || ifExist === "dm") && (
-        // placeholder only
+        // dm panel
         <div className={`panels${ifExist === "dm" ? " exit" : ""}`}>
           <h3>DM</h3>
           <p className="dmpn">
@@ -117,7 +111,7 @@ export default function MidBt() {
       )}
 
       {(ifOpen === "stan" || ifExist === "stan") && (
-        // placeholder only
+        // stan panel
         <div className={`panels${ifExist === "stan" ? " exit" : ""}`}>
           <h3>Ult</h3>
           <p className="tier">
@@ -140,6 +134,36 @@ export default function MidBt() {
             Laufey, Chapell Roan, 5SOS, Bruno Mars, Joji, Vaundy, King Gnu
             Aimer, LiSA, YOASOBI, Yorushika, SawanoHiroyuki[nZk], Hikaru Utada
           </p>
+        </div>
+      )}
+
+      {(ifOpen === "dani" || ifExist === "dani") && (
+        // dani bot panel
+        <div className={`panels${ifExist === "dani" ? " exit" : ""}`}>
+          <h3>Tap the buttons below :))</h3>
+          <br />
+
+          {/* for my LF's and Reserves */}
+          <a
+            href="https://rentry.co/dani-lfandrs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button text={"𖤐 LF's and Reserves"} />
+          </a>
+
+          <br />
+
+          {/* for card list*/}
+          <a
+            href="https://tinyurl.com/danibotcardlist"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              text={"𖤐 List of available Event and Limited Event Cards"}
+            />
+          </a>
         </div>
       )}
     </div>

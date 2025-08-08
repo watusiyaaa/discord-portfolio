@@ -6,9 +6,11 @@
   --text-color4: whitesmoke; /* Social icons hover color */
   --text-color5: rgba(196, 224, 192, 1);
   --text-color6: rgba(189, 226, 201, 1); /* mid-bt span tag color */
+  --text-color7: rgba(33, 74, 43, 1);
 
   /* box color var */
   --box-color1: rgba(7, 85, 39, 0.519);
+  --box-color2: rgba(0, 0, 0, 0.104); /* music player box */
 
   /* divider color */
   --div-color: rgba(48, 63, 54, 1);

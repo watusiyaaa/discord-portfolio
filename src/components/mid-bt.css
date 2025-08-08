@@ -1,7 +1,7 @@
 /* css for the buttons */
 .buttons {
   display: flex;
-  gap: 10px;
+  gap: 16px;
   margin-bottom: 10px;
 }
 
@@ -112,6 +112,7 @@ h3 {
   .buttons {
     flex-direction: row;
     align-items: center;
+    gap: 10px;
   }
 }
 
@@ -119,5 +120,31 @@ h3 {
   .buttons {
     flex-direction: column;
     align-items: center;
+  }
+
+  .panels {
+    border-top: 3px solid var(--text-color1);
+    border-left: none;
+  }
+
+  h3 {
+    color: var(--text-color3);
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .pnli,
+  .dmpn,
+  .tier {
+    font-size: 0.8rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .prt {
+    font-size: 0.5rem;
+    font-style: italic;
+    color: var(--text-color6);
   }
 }
